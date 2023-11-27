@@ -239,8 +239,18 @@ require('lazy').setup({
 -- Set highlight on search
 vim.o.hlsearch = false
 
--- Make line numbers default
-vim.wo.number = true
+-- Set up autocmd to switch line numbers based on mode
+vim.api.nvim_exec([[
+  augroup NumberToggle
+    autocmd!
+    autocmd InsertEnter * set norelativenumber
+    autocmd InsertLeave * set relativenumber
+  augroup END
+]], false)
+
+-- Set the initial configuration
+vim.o.relativenumber = true  -- Show relative line numbers initially
+vim.o.number = true      -- Show absolute line numbers initially
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
