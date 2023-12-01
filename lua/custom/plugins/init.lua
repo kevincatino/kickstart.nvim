@@ -5,4 +5,8 @@
 return {
 "ThePrimeagen/harpoon",
 "mbbill/undotree",
+'lervag/vimtex',
+    {"sopa0/telescope-makefile",
+        dependencies = {"akinsho/toggleterm.nvim"},
+    },
 }
