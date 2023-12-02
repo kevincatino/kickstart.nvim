@@ -3,7 +3,7 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-    "ThePrimeagen/harpoon",
+    -- "ThePrimeagen/harpoon",
     "mbbill/undotree",
     'lervag/vimtex',
     {"sopa0/telescope-makefile",
