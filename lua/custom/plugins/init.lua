@@ -3,11 +3,17 @@
 --
 -- See the kickstart.nvim README for more information
 return {
-"ThePrimeagen/harpoon",
-"mbbill/undotree",
-'lervag/vimtex',
+    "ThePrimeagen/harpoon",
+    "mbbill/undotree",
+    'lervag/vimtex',
     {"sopa0/telescope-makefile",
         dependencies = {"akinsho/toggleterm.nvim"},
     },
     'jinh0/eyeliner.nvim',
+    {
+        'stevearc/oil.nvim',
+        opts = {},
+        -- Optional dependencies
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+    }
 }
