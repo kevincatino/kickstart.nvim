@@ -297,9 +297,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 require("setup")
 
-<<<<<<< HEAD
-
-=======
 -- Telescope live_grep in git root
 -- Function to find the git root directory based on the current buffer's path
 local function find_git_root()
@@ -603,7 +600,6 @@ cmp.setup {
     { name = 'path' },
   },
 }
->>>>>>> 4d0dc8d4b1bd6b94e59f7773158149bb1b0ee5be
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
